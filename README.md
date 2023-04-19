@@ -16,7 +16,7 @@ To use BatteryBeep, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/iam-arnab/BatteryBeep.git`
 2. Install the dependencies listed above.
-3. Build the project using cmake: `cd BatteryBeep && mkdir build && cd build && cmake .. && make`
+3. Build the project using cmake: `cd BatteryBeep && mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make`
 4. Run the executable: `./BatteryBeep`
 
 BatteryBeep will start monitoring your battery level and will notify you every two minutes if your battery is above or equal to 85%. The notifications will stop only after you unplug the charger. There are many ways of running it in background but the most preferrable will be using a desktop file and putting it in `~/.config/autostart`.
